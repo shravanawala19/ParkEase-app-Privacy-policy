@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParkEase — Privacy Policy & Terms of Service</title>
+  <link rel="icon" type="image/png" href="icon.png">
+  <meta name="description" content="Official Privacy Policy and Terms of Service for ParkEase, establishing standards for data collection, physical gate security, and user autonomy.">
+  <meta name="theme-color" content="#141413">
+
+  <!-- Editorial Typography: Newsreader (Serif) + Inter (Sans) + JetBrains Mono (Code/Meta) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Anthropic Editorial Dark Palette */
+      --bg: #141413;
+      --bg-subtle: #1A1A18;
+      --bg-elevated: #20201D;
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-border-focus: rgba(217, 119, 87, 0.35);
+
+      --text-heading: #FAF8F5;
+      --text-body: #B5B3AD;
+      --text-muted: #7A7873;
+      --text-faint: #4E4C47;
+
+      /* Signature Anthropic Terracotta / Sand */
+      --terracotta: #D97757;
+      --terracotta-soft: rgba(217, 119, 87, 0.12);
+      --sand: #C4BFB5;
+      --sand-faint: rgba(196, 191, 181, 0.06);
+
+      --font-serif: "Newsreader", Charter, "Bitstream Charter", "Sitka Text", Georgia, serif;
+      --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg);
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-body);
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.8;
+      letter-spacing: -0.01em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-bottom: 120px;
+    }
+
+    ::selection {
+      background: var(--terracotta-soft);
+      color: var(--text-heading);
+    }
+
+    /* Minimalist Top Navigation */
+    header {
+      border-bottom: 1px solid var(--card-border);
+      background: rgba(20, 20, 19, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-heading);
+    }
+
+    .brand-mark {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      display: inline-block;
+      vertical-align: middle;
+      border: 1px solid var(--card-border);
+    }
+
+    .brand-title {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--text-heading);
+      letter-spacing: -0.02em;
+    }
+
+    .brand-divider {
+      color: var(--text-faint);
+      margin: 0 4px;
+      font-weight: 300;
+    }
+
+    .brand-sub {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--terracotta);
+    }
+
+    /* Main Container with 2-Column Desktop Grid */
+    .page-layout {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 56px 32px 0 32px;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    /* Left Sidebar: Sticky TOC */
+    aside {
+      position: sticky;
+      top: 96px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .toc-label {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      color: var(--text-faint);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .toc-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      list-style: none;
+    }
+
+    .toc-item a {
+      display: block;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 1.5;
+      padding: 4px 0;
+      transition: color 0.15s ease;
+    }
+
+    .toc-item a:hover {
+      color: var(--terracotta);
+    }
+
+    .toc-item.active a {
+      color: var(--text-heading);
+      font-weight: 500;
+    }
+
+    /* Right Column: Editorial Document */
+    main {
+      max-width: 720px;
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+    }
+
+    .doc-header {
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 32px;
+    }
+
+    .doc-meta-strip {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    .doc-title {
+      font-family: var(--font-serif);
+      font-size: 42px;
+      font-weight: 400;
+      color: var(--text-heading);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .doc-lead {
+      font-size: 16.5px;
+      color: var(--sand);
+      line-height: 1.7;
+      font-weight: 400;
+    }
+
+    /* Section Styling */
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      scroll-margin-top: 100px;
+    }
+
+    .section-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--terracotta);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 400;
+      color: var(--text-heading);
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-heading);
+      letter-spacing: -0.01em;
+      margin-top: 8px;
+    }
+
+    p {
+      color: var(--text-body);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    li {
+      color: var(--text-body);
+    }
+
+    li strong {
+      color: var(--text-heading);
+      font-weight: 500;
+    }
+
+    /* Minimalist Editorial Table */
+    .table-container {
+      margin: 12px 0 16px 0;
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      overflow-x: auto;
+      background: var(--bg-subtle);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      text-align: left;
+    }
+
+    th {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--card-border);
+      background: var(--bg-elevated);
+    }
+
+    td {
+      padding: 14px 16px;
+      color: var(--text-body);
+      border-bottom: 1px solid var(--card-border);
+      line-height: 1.6;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    td strong {
+      color: var(--text-heading);
+      font-weight: 500;
+    }
+
+    /* Callout Card (Anthropic Style) */
+    .callout {
+      border-left: 2px solid var(--terracotta);
+      background: var(--sand-faint);
+      padding: 18px 22px;
+      border-radius: 0 8px 8px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin: 8px 0;
+    }
+
+    .callout-title {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+    }
+
+    .callout-body {
+      color: var(--sand);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* Contact Details Block */
+    .contact-grid {
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      background: var(--bg-subtle);
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .contact-row {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      align-items: baseline;
+      font-size: 13.5px;
+    }
+
+    .contact-label {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .contact-value {
+      color: var(--text-heading);
+    }
+
+    a {
+      color: var(--terracotta);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s ease;
+    }
+
+    a:hover {
+      border-bottom-color: var(--terracotta);
+    }
+
+    code {
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      background: var(--bg-elevated);
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--card-border);
+      color: var(--sand);
+    }
+
+    /* Footer */
+    footer {
+      max-width: 1080px;
+      margin: 80px auto 0 auto;
+      padding: 32px;
+      border-top: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 860px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 32px 20px 0 20px;
+      }
+      aside {
+        display: none;
+      }
+      .doc-title {
+        font-size: 32px;
+      }
+      footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header>
+    <div class="header-inner">
+      <a href="#" class="brand">
+        <img src="icon.png" alt="ParkEase" class="brand-mark">
+        <span class="brand-title">ParkEase</span>
+        <span class="brand-divider">/</span>
+        <span class="brand-sub">Policy & Terms</span>
+      </a>
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        <span>Version 1.4 · Current</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-layout">
+
+    <!-- Left Sticky Table of Contents -->
+    <aside>
+      <div class="toc-label">Contents</div>
+      <ul class="toc-list">
+        <li class="toc-item"><a href="#introduction">01. Overview</a></li>
+        <li class="toc-item"><a href="#data-collection">02. Data Collected</a></li>
+        <li class="toc-item"><a href="#device-permissions">03. Device Permissions</a></li>
+        <li class="toc-item"><a href="#payment-processing">04. Financial Security</a></li>
+        <li class="toc-item"><a href="#gatekeeper-security">05. Gate Access & PINs</a></li>
+        <li class="toc-item"><a href="#account-deletion">06. Account Deletion</a></li>
+        <li class="toc-item"><a href="#governance">07. Grievance Officer</a></li>
+      </ul>
+    </aside>
+
+    <!-- Right Column: Clean Editorial Content -->
+    <main>
+
+      <!-- Document Header -->
+      <div class="doc-header">
+        <div class="doc-meta-strip">
+          <span>EFFECTIVE DATE: NOVEMBER 2, 2026</span>
+          <span>·</span>
+          <span>JURISDICTION: INDIA</span>
+          <span>·</span>
+          <span>APP ID: COM.PARKEASE.APP</span>
+        </div>
+        <h1 class="doc-title">Privacy Policy & Terms of Service</h1>
+        <p class="doc-lead">
+          This document governs the collection, stewardship, and protection of personal data across the ParkEase mobile and web applications, establishing transparent principles for vehicle access, physical security, and consumer rights.
+        </p>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section id="introduction">
+        <div class="section-eyebrow">01 / Overview</div>
+        <h2>Purpose & Governance</h2>
+        <p>
+          ParkEase operates an urban mobility marketplace that connects independent property owners (“Hosts”) with drivers seeking verified hourly, daily, and monthly parking facilities (“Drivers”). 
+        </p>
+        <p>
+          We believe technology should simplify urban navigation without compromising personal autonomy or digital privacy. This policy defines the boundaries of data we process, why each point of data is strictly required, and the mechanisms through which you maintain complete sovereignty over your information.
+        </p>
+      </section>
+
+      <!-- Section 2: Data Collection -->
+      <section id="data-collection">
+        <div class="section-eyebrow">02 / Information Stewardship</div>
+        <h2>Data Collected & Purpose</h2>
+        <p>
+          We operate under a strict standard of data minimization. We only collect the minimal parameters required to safely reserve physical space, provide gatekeeper verification, and execute transactions:
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Attributes</th>
+                <th>Justification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Identity & Session</strong></td>
+                <td>Name, email address, session tokens</td>
+                <td>Secure authentication and reservation confirmation delivery via Supabase.</td>
+              </tr>
+              <tr>
+                <td><strong>Vehicle Garage</strong></td>
+                <td>License plate (HSRP format), make, model</td>
+                <td>Authorized security clearance at residential and commercial access gates.</td>
+              </tr>
+              <tr>
+                <td><strong>Foreground Location</strong></td>
+                <td>Device GPS latitude and longitude</td>
+                <td>Computing real-time driving distances to nearby open parking bays.</td>
+              </tr>
+              <tr>
+                <td><strong>Host Inventory</strong></td>
+                <td>Listing address, bay photographs, amenities</td>
+                <td>Cataloging parking inventory and providing access guidance to verified drivers.</td>
+              </tr>
+              <tr>
+                <td><strong>Verified Reviews</strong></td>
+                <td>Star rating (1–5) and written feedback</td>
+                <td>Establishing marketplace trust and dynamic host scoring following checkout.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout">
+          <div class="callout-title">Commitment Against Commercialization</div>
+          <div class="callout-body">
+            ParkEase does not sell, license, rent, or trade your personal information, driving destinations, or vehicle records with advertising intermediaries, brokers, or external analytics firms.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Permissions -->
+      <section id="device-permissions">
+        <div class="section-eyebrow">03 / Platform Access</div>
+        <h2>Runtime Device Permissions</h2>
+        <p>
+          In conformance with Google Play Store compliance directives, runtime permissions are requested only when a corresponding in-app action is initiated by the user:
+        </p>
+        <ul>
+          <li>
+            <strong>Foreground Location (ACCESS_FINE_LOCATION & ACCESS_COARSE_LOCATION)</strong>: 
+            Used exclusively while the application is active on screen to populate the interactive map with nearby facilities. Location access ceases immediately when the application is placed in the background or terminated.
+          </li>
+          <li>
+            <strong>Camera (CAMERA)</strong>: 
+            Invoked solely when scanning an entry pass QR code or photographing a parking stall during the host onboarding workflow.
+          </li>
+          <li>
+            <strong>Photo Library (READ_EXTERNAL_STORAGE)</strong>: 
+            Permits property owners to upload pre-existing photographs of parking bays from device storage.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section 4: Payments -->
+      <section id="payment-processing">
+        <div class="section-eyebrow">04 / Financial Integrity</div>
+        <h2>Payment Processing & Escrow</h2>
+        <p>
+          Financial settlements on ParkEase are facilitated through <strong>Razorpay Software Private Limited</strong>, an RBI-regulated and PCI-DSS Level 1 certified payment aggregator.
+        </p>
+        <ul>
+          <li>
+            <strong>Zero Card Data Retention</strong>: Card numbers, CVV codes, and net banking credentials are input directly into Razorpay’s encrypted interface and are never transmitted to or retained by ParkEase servers.
+          </li>
+          <li>
+            <strong>Direct UPI Verification</strong>: Mobile payments conducted via Unified Payments Interface (GPay, PhonePe, Paytm) are authorized through hardware-isolated banking modules utilizing 256-bit encryption.
+          </li>
+          <li>
+            <strong>Cancellation Protocol</strong>: Hourly reservations cancelled before the designated check-in window are refunded 100% to the original payment method without penalty. Monthly subscriptions may be discontinued at any time.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section 5: Access Security -->
+      <section id="gatekeeper-security">
+        <div class="section-eyebrow">05 / Physical Safeguards</div>
+        <h2>Gate Access & 6-Digit Verification</h2>
+        <p>
+          Physical security for property hosts and parking facilities is governed through algorithmic access control:
+        </p>
+        <ul>
+          <li>
+            Private building instructions, gate codes, and parking stall numbers remain redacted on public listings until a booking is accepted.
+          </li>
+          <li>
+            Check-in and check-out are authorized via a unique <strong>6-digit Entry/Exit PIN system</strong>, validating driver presence and automatically computing overstay protections.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section 6: Account Deletion -->
+      <section id="account-deletion">
+        <div class="section-eyebrow">06 / Data Sovereignty</div>
+        <h2>Account & Data Deletion Rights</h2>
+        <p>
+          In adherence to Google Play Store requirements and international privacy standards, users hold the absolute right to delete their profile, history, and uploaded materials:
+        </p>
+
+        <div class="callout">
+          <div class="callout-title">Autonomous In-App Deletion</div>
+          <div class="callout-body">
+            1. Navigate to <strong>Profile</strong> ➔ <strong>Legal, Privacy & Account Controls</strong>.<br>
+            2. Select <strong>Delete Account & Data</strong> and confirm.<br>
+            3. All personal records, saved vehicles, transaction references, and listings are immediately and permanently removed from our active production cluster.
+          </div>
+        </div>
+
+        <p>
+          Users may also request manual erasure by contacting <a href="mailto:avsco.net@gmail.com">avsco.net@gmail.com</a> with the subject line <em>“Data Deletion Request”</em>. Verification and permanent erasure are fulfilled within 48 business hours.
+        </p>
+      </section>
+
+      <!-- Section 7: Governance & Contact -->
+      <section id="governance">
+        <div class="section-eyebrow">07 / Oversight</div>
+        <h2>Grievance Redressal & Contact</h2>
+        <p>
+          For regulatory inquiries, policy clarifications, or data rights enforcement, please contact our designated Grievance Officer:
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-row">
+            <span class="contact-label">Organization</span>
+            <span class="contact-value">ParkEase Technologies & Urban Mobility</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Grievance Lead</span>
+            <span class="contact-value">Shravan Awala</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Official Email</span>
+            <span class="contact-value"><a href="mailto:avsco.net@gmail.com">avsco.net@gmail.com</a></span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Application ID</span>
+            <span class="contact-value"><code>com.parkease.app</code></span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Jurisdiction</span>
+            <span class="contact-value">Maharashtra, India (IT Act 2000 & DPDP Act 2023)</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Editorial Footer -->
+  <footer>
+    <div>© 2026 ParkEase Technologies. All rights reserved.</div>
+    <div>Compliance: Google Play Developer Distribution Agreement Section 4.8</div>
+  </footer>
+
+</body>
+</html>
